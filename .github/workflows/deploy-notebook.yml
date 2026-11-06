@@ -87,7 +87,7 @@ jobs:
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
         DEST_TOKEN=${{ secrets.DATABRICKS_DEST_TOKEN }}
-        CLUSTER_NAME="jaljd@hotmail.com's Cluster"
+        CLUSTER_NAME="ClusterSD"
         
         echo "Buscando cluster existente: $CLUSTER_NAME"
         
@@ -133,7 +133,7 @@ jobs:
                 "notebook_path": "/proyecto/ventas/notebooks/1.Preparacion_Ambiente",
                 "SOURCE": "WORKSPACE",
                 "base_parameters": {
-                  "storageName": "s3smartdata2109",
+                  "storageName": "adbsmartdata2510",
                   "catalogwk": "catalog_prod"
                 }
               },
@@ -151,7 +151,7 @@ jobs:
                   "container": "raw",
                   "catalogo": "catalog_prod",
                   "esquema": "bronze",
-                  "storageName": "s3smartdata2109",
+                  "storageName": "adbsmartdata2510",
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -173,7 +173,7 @@ jobs:
                   "container": "raw",
                   "catalogo": "catalog_prod",
                   "esquema": "bronze",
-                  "storageName": "s3smartdata2109",
+                  "storageName": "adbsmartdata2510",
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -195,7 +195,7 @@ jobs:
                   "container": "raw",
                   "catalogo": "catalog_prod",
                   "esquema": "bronze",
-                  "storageName": "s3smartdata2109",
+                  "storageName": "adbsmartdata2510",
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
